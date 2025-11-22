@@ -10,6 +10,7 @@
 
 # general text files
 *.txt
+!taxid_files/*.txt
 
 # taxdump files
 *.prt
