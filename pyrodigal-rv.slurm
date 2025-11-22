@@ -8,7 +8,7 @@
 
 cd $VSC_SCRATCH/pyrodigal_gv_models/refseq_genomes
 
-conda activate gb_submitter
+# dependencies: hyperfine, pyrodigal, pyrodigal-rv, pyrodigal-gv (install in conda env for example)
 
 pyrodigal-rv -i genomic_no_N.fna -o predictions_closed.gff -j 10 -c --pool process
 pyrodigal -i genomic_no_N.fna -o vanilla_predictions_closed.gff -j 10 -g 1 -c --pool process
