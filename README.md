@@ -45,3 +45,17 @@ CLI speed was benchmarked with [hyperfine](https://github.com/sharkdp/hyperfine)
 | `pyrodigal` | 63.883 ± 0.597 | 63.402 | 65.288 | 2.19 ± 0.03 |
 | `pyrodigal-gv` | 29.568 ± 0.563 | 28.250 | 30.286 | 1.01 ± 0.02 |
 | `pyrodigal-rv` | 29.150 ± 0.199 | 28.860 | 29.540 | 1.00 |
+
+### Finding Ribosomal Binding Sites 
+
+One use of prodigal is to identiy ribosomal binding sites (rbs) (as is done in [this](https://www.nature.com/articles/s41586-020-1957-x) paper) which can be useful for classifying viruses (e.g used as a feature in [genomad](https://github.com/apcamargo/genomad)). 
+
+[`pyrodigal-rv`](https://github.com/LanderDC/pyrodigal-rv) finds fewer canonical rbs in Eukaryotic RNA viruses than [`pyrodigal-gv`](https://github.com/althonos/pyrodigal-gv)  (which probably shouldn't be there). This means that [`pyrodigal-rv`](https://github.com/LanderDC/pyrodigal-rv)  may aid in determining whether the host of an RNA virus is eukaryotic or prokaryotic. Futher details are in the [finding_rbs.ipynb](https://github.com/susiegriggo/add_pyrodigal_rv_models/blob/main/finding_rbs.ipynb) notebook. 
+
+<p align="left">
+  <img src="images/canonical_rbs.png" width="1000" title="tt_mismatch_fam">
+</p>
+
+
+
+
